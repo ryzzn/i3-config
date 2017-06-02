@@ -1,9 +1,9 @@
-set $mod Mod4
+set $mod Mod1
 
-font pango:Terminus 11px
+font pango:Terminus 12px
 
 new_window pixel 3
-focus_follows_mouse  no
+focus_follows_mouse  yes
 
 force_focus_wrapping yes
 
@@ -33,7 +33,7 @@ client.urgent             $based3   $magenta  $base3   $based3  $magenta
 
 floating_modifier $mod
 
-bindsym $mod+Return exec st
+bindsym $mod+Return exec urxvt
 
 bindsym $mod+c kill
 
@@ -52,7 +52,7 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+v split h
+# bindsym $mod+v split h
 bindsym $mod+g split v
 
 bindsym $mod+f fullscreen
@@ -134,3 +134,4 @@ bar {
                 urgent_workspace $based3 $magenta $base2
         }
 }
+

@@ -54,6 +54,7 @@ gpg-connect-agent updatestartuptty /bye
 
 # composition manager
 compton --config $I3_CONFIG_DIR/compton.conf &
+ibus-daemon &
 
 # Network Manager applet
 >> /dev/null which nm-applet && nm-applet &
