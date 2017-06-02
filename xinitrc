@@ -62,5 +62,3 @@ ibus-daemon &
 
 i3-regenerate
 i3
-
-true
